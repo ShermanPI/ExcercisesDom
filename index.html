@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Excercises</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="img-logo">
+            <img src="./img/icon/letra-s.png" alt="Menu Icon">
+        </div>
+        <div class="img-logo hide">
+            <img src="./img/icon/menu.png" alt="burger-menu" id="burguer-menu">
+        </div>    
+        <nav>
+            <ul>
+                <li class="hide">
+                    <div class="img-close">
+                        <img src="./img/icon/cerrar.png" alt="Menu Icon" class="img-close">
+                    </div>    
+                </li>
+                <li>
+                    <a href="#section-1">
+                        <span class="number-text">01</span> Sección
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-2">
+                        <span class="number-text">02</span> Sección
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-3">
+                        <span class="number-text">03</span> Sección
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-4">
+                        <span class="number-text">04</span> Sección
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-5">
+                        <span class="number-text">05</span> Sección
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section" id="section-1">
+            <h1>01 Sección</h1>
+            <h3>Reloj Digital y Alarma Sonora</h3>
+
+            <div class="clock-container">
+                <div class="clock">
+                    01.56.5742
+                </div>
+                <div class="buttons-container">
+                    <button> Iniciar reloj</button>
+                    <button> Detener Reloj</button>
+                    <button> Iniciar Alarma</button>
+                    <button> Detener Alarma</button>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="section" id="section-2">
+            <h1>02 Sección</h1>
+        </section>
+        
+        <section class="section" id="section-3">
+            <h1>03 Sección</h1>
+        </section>
+        
+        <section class="section" id="section-4">
+            <h1>04 Sección</h1>
+        </section>
+       
+        <section class="section" id="section-5">
+            <h1>05 Sección</h1>
+        </section>
+        
+    </main>
+  
+    <script src="js/index_dom.js" type="module"></script>
+</body>
+</html>

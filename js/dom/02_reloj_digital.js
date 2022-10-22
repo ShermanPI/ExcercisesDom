@@ -2,6 +2,11 @@
 
 MI SOLUCION
 
+cosas a mejorar: se debio hacer solamente un listener en el dom para delegar las acciones.
+Al querer hacer un setInterval y luego utilizar el mismo setInterval en el mismo scope se tuvo que hacer otro listener, pero simplemente podias hacer una variable vacia y que dentro de la condicional if(e.target.matches(...)) cambiar el valor de esa referencia a la variable vacia, asi haciendo que sea accesible desde otro scope.
+
+El sonido pudo haberse pasado como parametro :v
+
 */
 
 export function setClock(container, btnStart, btnStop){

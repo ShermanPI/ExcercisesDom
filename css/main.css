@@ -198,3 +198,22 @@ nav ul li a:hover{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.bolita-container{
+    width: 100%;
+    background-color: var(--action-blue);
+    height: 30em;
+    display: flex;
+
+}
+
+.bolita{
+    background-color: var(--action-red);
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 100%;
+    border: 1px solid var(--neutral-black);
+    margin: auto;
+    /* z-index: 0; */
+}
+

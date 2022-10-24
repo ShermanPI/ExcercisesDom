@@ -1,3 +1,11 @@
+/*
+
+Cosas a mejorar: que la fecha se le pase de forma de string o de un formato valido y que 
+internamente el objeto se instancie en la funcion.  
+
+*/
+
+
 const d = document; 
 export function setCountdown(container, dateLimit){    
     
@@ -40,3 +48,5 @@ export function setCountdown(container, dateLimit){
     
 
 }
+
+/*SOLUCION DEL JONATHAN - Curso JavaScript: 86. DOM: Ejercicios Prácticos | Cuenta Regresiva (countdown)*/

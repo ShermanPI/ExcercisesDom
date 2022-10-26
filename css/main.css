@@ -7,11 +7,11 @@
 }
 
 :root{
-    --neutral-green: #C4D6B0;
-    --neutral-black: #291F1E;
+    --neutral-green: #C4D6B0; /*light mode: #F9F6EE*/
+    --neutral-black: #291F1E; /* light mode: #477998*/
     --neutral-black-transparent: #291f1eb4;
     --action-red: #F64740;
-    --action-blue: #477998;
+    --action-blue: #477998; 
     --container-width: 1200px;
 }
 
@@ -214,6 +214,7 @@ nav ul li a:hover{
     border-radius: 100%;
     border: 1px solid var(--neutral-black);
     margin: auto;
+    transition: transform 0.05s;
     /* z-index: 0; */
 }
 
@@ -267,3 +268,13 @@ nav ul li a:hover{
 }
 
 /*visibility: hidden*/
+
+.mode{
+    height: 100%;   
+    width: 100%;
+    display: block;
+}
+
+.p-03{
+    padding: 0.3em;
+}

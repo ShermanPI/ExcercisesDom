@@ -34,7 +34,7 @@ export function setLightMode(btn){
     if(localStorage.getItem(localStorageKey) == lightProps.theme){
         changeMode(lightProps)
     }else{
-        changeMode(darkProps)
+        localStorage.setItem(localStorageKey, darkProps.theme) 
     }
     
     d.addEventListener("click", (e)=>{

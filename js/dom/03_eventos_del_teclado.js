@@ -32,14 +32,14 @@ export function setShorcutPrompt(msj){
 
 // ↓↓↓↓↓↓ para saber los eventos del teclado, cuando sucede un keyUp y keyDown en la consola ↓↓↓↓↓↓
 
-export function getThePressedKey(){
-    document.addEventListener("keyup", log);
-    document.addEventListener("keydown", log);
+// export function getThePressedKey(){
+//     document.addEventListener("keyup", log);
+//     document.addEventListener("keydown", log);
     
-    function log(event){
-        console.log( event );
-    }
-}
+//     function log(event){
+//         console.log( event );
+//     }
+// }
 
 
 // solucion del jonathan del ejercicio 3.1, hizo lo mismo con el teclado solo que sin porder especificar el mensaje que se mostrará, y utilizando este archivo para simplemente establecer el handler para el listener que se va a estar ejecutando en el archivo principal y asi haciendo que solo este un listener por parte del documento.

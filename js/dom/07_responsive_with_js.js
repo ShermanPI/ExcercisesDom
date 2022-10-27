@@ -22,7 +22,7 @@ export function setMedia(minWidth, ...elObjIterable){
             if(mql.matches){
                 $el.innerHTML = el.iframe
             }else{
-                console.log(mql)
+                // console.log(mql)
                 $el.innerHTML = `<a href="${el.url}" target="_blank">${el.name}</a>`
             }
         })

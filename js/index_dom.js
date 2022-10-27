@@ -1,11 +1,12 @@
 import hamburgerMenu from "./dom/01_menu_hamburguesa.js";
 import {setClock, alarm} from "./dom/02_reloj_digital.js";
-import {getThePressedKey, setBolita, setShorcutAlert, setShorcutConfirm, setShorcutPrompt} from "./dom/03_eventos_del_teclado.js";
+import {setBolita, setShorcutAlert, setShorcutConfirm, setShorcutPrompt} from "./dom/03_eventos_del_teclado.js";
 import {setCountdown} from "./dom/04_countdown.js";
 import {scrollButton} from "./dom/05_scroll_button.js";
 import {setLightMode} from "./dom/06_light_mode.js";
 import { setMedia } from "./dom/07_responsive_with_js.js";
 import { responsiveTester } from "./dom/08_excercise_responsive_tester.js";
+import detectDevice from "./dom/09_deteccion_dispositivo_user_agent.js"
 
 const d = document;
 
@@ -20,7 +21,6 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     alarm(".playAlarmBtn", ".stopAlarmBtn")
     
     //llamadas del ejercicio 3
-    getThePressedKey()
     setShorcutAlert("Has generado una alerta")
     setShorcutConfirm("quieres realizar esta accion")
     setShorcutPrompt("Escribe algun texto, te escucho")
@@ -45,6 +45,9 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamadas del ejercicio 8
     responsiveTester("form-responsive")
+
+    //llamadas del ejercicio 9
+    detectDevice("user-device")
 })
 
 var objArray = [

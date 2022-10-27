@@ -5,6 +5,7 @@ import {setCountdown} from "./dom/04_countdown.js";
 import {scrollButton} from "./dom/05_scroll_button.js";
 import {setLightMode} from "./dom/06_light_mode.js";
 import { setMedia } from "./dom/07_responsive_with_js.js";
+import { responsiveTester } from "./dom/08_excercise_responsive_tester.js";
 
 const d = document;
 
@@ -24,23 +25,26 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     setShorcutConfirm("quieres realizar esta accion")
     setShorcutPrompt("Escribe algun texto, te escucho")
     
-    //llamadas ejercicio 4
+    //llamadas ejercicio 3
     setBolita(".bolita-container", ".bolita")
     
-    //llamadas del ejercicio 5
+    //llamadas del ejercicio 4
     let dateLimit = new Date(new Date().getFullYear()+1, new Date().getMonth(),new Date().getDate(), 10, 29)
     setCountdown(".countdown-container", dateLimit)
     // let dateLimit = new Date("Oct 23, 2022 22:37:25")
     // console.log(dateLimit)
     
-    //llamadas ejercicio 6
+    //llamadas ejercicio 5
     scrollButton(".top-button")
 
-    //llamadas ejercicio 7
+    //llamadas ejercicio 6
     setLightMode(".mode")
 
-    //llamadas de l ejercicio 8
+    //llamadas del ejercicio 7
     setMedia(700, ...objArray)
+
+    //llamadas del ejercicio 8
+    responsiveTester("form-responsive")
 })
 
 var objArray = [

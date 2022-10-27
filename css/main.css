@@ -278,3 +278,27 @@ nav ul li a:hover{
 .p-03{
     padding: 0.3em;
 }
+
+#form-responsive{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-inline: auto;
+}
+
+#form-responsive * {
+ width: 100%;
+ margin-block: 0.5em;
+ font-size: 1em;
+}
+
+#form-responsive input{
+ height: 2.8em;
+ padding-left: 1em;
+}
+
+@media (max-width: 42em) {
+    #form-responsive{
+        width: 100%;
+    }
+}

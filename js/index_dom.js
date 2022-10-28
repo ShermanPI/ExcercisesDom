@@ -7,6 +7,7 @@ import {setLightMode} from "./dom/06_light_mode.js";
 import { setMedia } from "./dom/07_responsive_with_js.js";
 import { responsiveTester } from "./dom/08_excercise_responsive_tester.js";
 import detectDevice from "./dom/09_deteccion_dispositivo_user_agent.js"
+import notificationOnlineStatus from "./dom/10_detección_estado_red.js";
 
 const d = document;
 
@@ -48,6 +49,9 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamadas del ejercicio 9
     detectDevice("user-device")
+
+    //llamdadas del ejercicio 10
+    notificationOnlineStatus("notification")
 })
 
 var objArray = [

@@ -13,7 +13,7 @@ const w = window,
 
 export function setMedia(minWidth, ...elObjIterable){ 
     //recibirá varios objetos de tipo elObjIterable, que tienen la estructura de arriba.
-    const mql = w.matchMedia(`(min-width: ${minWidth}px)`);
+    const mql = w.matchMedia(`(min-width: ${minWidth}px)`); // mediaQueryList
 
     const adaptToMedia = function(elObjIterable){
         elObjIterable.forEach((el)=>{

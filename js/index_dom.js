@@ -9,6 +9,7 @@ import { responsiveTester } from "./dom/08_excercise_responsive_tester.js";
 import detectDevice from "./dom/09_deteccion_dispositivo_user_agent.js"
 import notificationOnlineStatus from "./dom/10_detección_estado_red.js";
 import setWebcam from "./dom/11_webcam.js"
+import setLocation from "./dom/12_geolocation.js";
 
 const d = document;
 
@@ -56,6 +57,9 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamdas del ejercicio 11
     setWebcam("webcam")
+
+    //llamadas del ejercicio 12
+    setLocation("location-info")
 })
 
 var objArray = [

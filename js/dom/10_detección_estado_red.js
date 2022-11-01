@@ -1,3 +1,8 @@
+/*
+notas a mejorar: era mejor crear el elementro donde iba aparecer la notificacion en vez de simplemente especificar un elemento que s eiba a esconder
+
+*/
+
 const w = window,
     d = document,
     n = w.navigator;
@@ -22,7 +27,6 @@ export default function notificationOnlineStatus(divId){
     w.addEventListener("offline", (e)=>{
         sendMessage("offLine", "Se calló XD")
     })
-
 
 }
 

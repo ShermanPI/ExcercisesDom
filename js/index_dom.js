@@ -8,6 +8,7 @@ import { setMedia } from "./dom/07_responsive_with_js.js";
 import { responsiveTester } from "./dom/08_excercise_responsive_tester.js";
 import detectDevice from "./dom/09_deteccion_dispositivo_user_agent.js"
 import notificationOnlineStatus from "./dom/10_detección_estado_red.js";
+import setWebcam from "./dom/11_webcam.js"
 
 const d = document;
 
@@ -52,6 +53,9 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamdadas del ejercicio 10
     notificationOnlineStatus("notification")
+
+    //llamdas del ejercicio 11
+    setWebcam("webcam")
 })
 
 var objArray = [

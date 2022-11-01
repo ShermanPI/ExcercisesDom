@@ -324,3 +324,8 @@ nav ul li a:hover{
 .c-offLine{
     background-color: var(--action-red);
 }
+
+#section-7 video{
+    width: 100%;
+}
+

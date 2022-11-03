@@ -10,6 +10,7 @@ import detectDevice from "./dom/09_deteccion_dispositivo_user_agent.js"
 import notificationOnlineStatus from "./dom/10_detección_estado_red.js";
 import setWebcam from "./dom/11_webcam.js"
 import setLocation from "./dom/12_geolocation.js";
+import setFilter from "./dom/13_filtro_de_busqueda.js";
 
 const d = document;
 
@@ -60,6 +61,10 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamadas del ejercicio 12
     setLocation("location-info")
+
+    //llamadas del ejercicio 13
+    setFilter(".card", "search-filter")
+
 })
 
 var objArray = [

@@ -50,6 +50,7 @@ ejercicio 3.2 - hacer mover bolita con las flechas.
 
 ***********/
 
+let isKeyDownEventActive = false;
 
 export function setBolita(stage, bolita){
     let $bolita = d.querySelector(bolita),
@@ -103,13 +104,14 @@ export function setBolita(stage, bolita){
         if(e.target.matches(stage)){
             $stage.style.border = "1px solid black";
             d.addEventListener("keydown", sostenedorDelHandler)
+            isKeyDownEventActive = true;
 
-        }else if(!(e.target.matches(stage))){
+        }else if(!(e.target.matches(stage)) && isKeyDownEventActive){
             d.removeEventListener("keydown", sostenedorDelHandler)
+            console.log("borrando event")
+            isKeyDownEventActive = false
             $stage.style = null;
         }
-        
-
     })
     
 }

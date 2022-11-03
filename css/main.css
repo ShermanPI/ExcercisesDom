@@ -329,3 +329,37 @@ nav ul li a:hover{
     width: 100%;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.card{
+    background-color: var(--neutral-black);
+    color: var(--neutral-green);
+    transition: all 0.3s ease-out;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card figcaption {
+    padding: 1rem;
+}
+
+.search-filter{
+    
+    padding-block: 1em;
+    padding-left: 1em;
+    width: 50%;
+}
+
+.hidden{
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    order:1;
+}

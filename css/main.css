@@ -363,3 +363,40 @@ nav ul li a:hover{
     opacity: 0;
     order:1;
 }
+
+.sorteo-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.sorteo-element{
+    list-style: none;
+    margin-block: 1em;
+    padding-block: 1.5em;
+    background-color: var(--neutral-black);
+    color: var(--neutral-green);
+    width: calc(50% - 0.5em);
+}
+
+.sorteo-button{
+    width: 100%;
+    height: 3em;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 1px solid var(--action-red);
+    background-color: var(--action-red);
+    color: var(--neutral-black);
+}
+
+.sorteo-button:hover{
+    color: var(--action-red);
+    background-color: #fff;
+}
+
+.ganador{
+    background-color: var(--action-red);
+    color: var(--neutral-black);
+}

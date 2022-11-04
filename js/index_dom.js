@@ -11,6 +11,7 @@ import notificationOnlineStatus from "./dom/10_detección_estado_red.js";
 import setWebcam from "./dom/11_webcam.js"
 import setLocation from "./dom/12_geolocation.js";
 import setFilter from "./dom/13_filtro_de_busqueda.js";
+import setSorteo from "./dom/14_sorteo.js";
 
 const d = document;
 
@@ -64,6 +65,10 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamadas del ejercicio 13
     setFilter(".card", "search-filter")
+
+    //llamadas del ejercicio 14
+    setSorteo(".sorteo-button", ".sorteo-items li")
+
 
 })
 

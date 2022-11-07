@@ -61,20 +61,40 @@ header{
     padding-inline: 2em;
 }
 
+
+main{
+    width: 80%;
+}
+
 nav{
+    position: fixed;
     /* padding-right: 2em; */
-    height: 100%;
     transition-property: transform;
     transition-duration: 0.5s;
+    right: 0;
+    padding-top: 4em;
+    height: 100vh;
+    min-width: 20%;
+    top: 0;
+    background-color: var(--neutral-black-transparent);
+    backdrop-filter: blur(5em);
+    
 }
 
 nav ul{
-    height: 100%;
     list-style: none;
     display: flex;
+    flex-direction: column;
+}
+nav ul li{
+    line-height: 3em;
+    width: 100%;
+    
 }
 
 nav ul li a{
+    width: 100%;
+    display: flex;
     color: var(--neutral-green);
     text-decoration: none;
     cursor: pointer;
@@ -84,8 +104,11 @@ nav ul li a{
     padding-inline: 0.7em;
 }
 
-nav ul li a:hover{
-    background-color: var(--action-red);
+
+
+.soleado{
+    display: flex;
+    align-items: center;
 }
 
 .number-text{
@@ -98,7 +121,21 @@ nav ul li a:hover{
     display: none;
 }
 
+.active{
+    background-color: var(--action-red);
+}
+
+nav ul li a:hover{
+    color: var(--action-red);
+}
+
 @media (max-width: 42em) {
+
+    nav ul li a:hover{
+        background-color: var(--action-red);
+        color: var(--neutral-green);
+    }
+
     .hide{
         display: block;
     }
@@ -140,6 +177,9 @@ nav ul li a:hover{
         justify-content: center;
     }
 
+    main{
+        width: 100%;
+    }
 
 
 }

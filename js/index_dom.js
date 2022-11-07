@@ -13,6 +13,7 @@ import setLocation from "./dom/12_geolocation.js";
 import setFilter from "./dom/13_filtro_de_busqueda.js";
 import setSorteo from "./dom/14_sorteo.js";
 import setSlider from "./dom/15_slider.js";
+import intersectionMenu from "./dom/16_intersection_observer.js";
 
 const d = document;
 
@@ -72,6 +73,9 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamadas del ejercicio 15
     setSlider(".left-button", ".right-button", ".slider-item")
+
+    //llamadas del ejercicio 16
+    intersectionMenu()
 
 })
 

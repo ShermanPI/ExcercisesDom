@@ -22,7 +22,7 @@ html{
 
 body{
     background-color: var(--neutral-green);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .img-logo{
@@ -399,4 +399,88 @@ nav ul li a:hover{
 .ganador{
     background-color: var(--action-red);
     color: var(--neutral-black);
+}
+
+/* .items-slider-container{
+    display: flex;
+    height: 30em;
+    width: 100%;
+    background-color: #F64740;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.slider-item{
+    width: 100%;
+}
+
+.slider-item img {
+    width: 100%;
+    position: absolute;
+    display: block;
+} */
+
+.slider-container{
+    /* background-color: #477998; */
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+
+}
+
+.items-slider-container{
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+    /* background-color: #F64740; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.slider-item{
+    min-width: 100%;
+}
+
+.slider-item img{
+    width: 100%;
+    display: block;
+}
+
+.este{
+    order:-1;
+}
+
+.slider-buttons{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -17em;
+}
+
+.slider-buttons *{
+    background-color: rgba(255, 255, 255, 0.302);
+    backdrop-filter: blur(2em);
+}
+.slider-buttons *:hover{
+    background-color: rgba(255, 255, 255, 0.617);
+}
+
+
+
+.slider-buttons img{
+    height: 100%;
+    cursor: pointer;
+}
+
+.left-button{
+    transform: rotate(180deg);
+}
+
+.primero{
+    order: -1;
 }

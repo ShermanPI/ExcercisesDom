@@ -12,6 +12,7 @@ import setWebcam from "./dom/11_webcam.js"
 import setLocation from "./dom/12_geolocation.js";
 import setFilter from "./dom/13_filtro_de_busqueda.js";
 import setSorteo from "./dom/14_sorteo.js";
+import setSlider from "./dom/15_slider.js";
 
 const d = document;
 
@@ -69,6 +70,8 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     //llamadas del ejercicio 14
     setSorteo(".sorteo-button", ".sorteo-items li")
 
+    //llamadas del ejercicio 15
+    setSlider(".left-button", ".right-button", ".slider-item")
 
 })
 

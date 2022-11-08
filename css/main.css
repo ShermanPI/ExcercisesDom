@@ -29,24 +29,23 @@ body{
     width: 2.5em;   
 }
 
-
 .img-logo:hover{
     opacity: 0.5;   
 }
-
 
 .img-logo img{
     width: 100%;
     display: block;
     cursor: pointer;
 }
+
 .img-close{
     width: 1.5em;
 }
+
 .img-close img{
     width: 100%;
 }
-
 
 header{
     width: 100%;
@@ -68,6 +67,7 @@ main{
 
 nav{
     position: fixed;
+    overflow-y: scroll;
     /* padding-right: 2em; */
     transition-property: transform;
     transition-duration: 0.5s;
@@ -523,4 +523,82 @@ nav ul li a:hover{
 
 .primero{
     order: -1;
+}
+
+.rick-video{
+    width: 100%;
+}
+
+#contact-form{
+    --form-ok-color: #28a745;
+    --form-error-color: #dc3545;
+
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-inline: auto;
+}
+
+#contact-form input{
+ width: 100%;
+ margin-block: 0.5em;
+ font-size: 1em;
+}
+
+@media (max-width: 42em) {
+    #contact-form{
+        width: 100%;
+    }
+}
+#contact-form input,
+.comments{
+    font-size: 1em;
+    font-family: sans-serif;
+    padding: 1em;
+}
+.comments{
+    width: 100%;
+    resize: none;
+}
+
+.submit-btn{
+    cursor: pointer;
+}
+
+#contact-form [required]:valid{
+    border: thin solid var(--form-ok-color);
+}
+
+#contact-form [required]:invalid{
+    border: thin solid var(--form-error-color);
+}
+
+.contact-form-error{
+    margin-top: -0.5em;
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+}
+
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s normal 0s  ease-out both;
+}
+
+.none{
+    display: none;
+}
+
+@keyframes show-message {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
 }

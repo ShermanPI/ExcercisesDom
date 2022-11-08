@@ -14,6 +14,7 @@ import setFilter from "./dom/13_filtro_de_busqueda.js";
 import setSorteo from "./dom/14_sorteo.js";
 import setSlider from "./dom/15_slider.js";
 import intersectionMenu from "./dom/16_intersection_observer.js";
+import videoIntersection from "./dom/17_video_intersection.js";
 
 const d = document;
 
@@ -76,6 +77,9 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 
     //llamadas del ejercicio 16
     intersectionMenu()
+
+    //llamadas del ejercicio 17
+    videoIntersection(".rick-video")
 
 })
 

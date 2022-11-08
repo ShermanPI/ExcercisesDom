@@ -8,7 +8,7 @@ export default function setSorteo(btnSorteo, sorteoItems){
     
     d.addEventListener("click",e=>{
         
-        if(e.target.matches(btnSorteo)){
+        if(e.target.matches(btnSorteo)){z
 
             if(w.localStorage.getItem("currentWinner")) $sorteoItems[currentWinner].classList.remove("ganador")
 

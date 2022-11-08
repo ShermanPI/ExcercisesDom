@@ -23,7 +23,7 @@ export default function intersectionMenu(){
         // root - el default es viewport 
         // rootMargin
         threshold: [0.5, 0.75] //min, max --> from 0 to 1 (0%-100%)
-        //treshold: qué tanto del elemento se tiene que ver en el viewport del root para activar la callback
+        //treshold: qué tanto del elemento se tiene que ver en el viewport del root para activar la callback, en la callback se tendria que revisar si el isIntersecting del entry es true.
     }) 
 
     $sections.forEach(el => observer.observe(el)) // observes elements

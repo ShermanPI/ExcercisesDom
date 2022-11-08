@@ -96,6 +96,16 @@
                         <span class="number-text">11 -</span> Slider
                     </a>
                 </li>
+                <li>
+                    <a href="#section-12" data-scroll-spy>
+                        <span class="number-text">12 -</span> Video
+                    </a>
+                </li>
+                <li>
+                    <a href="#section-13" data-scroll-spy>
+                        <span class="number-text">13 -</span> Form Validation
+                    </a>
+                </li>
                 
             </ul>
         </nav>
@@ -180,6 +190,7 @@
                 
             </div>
         </section>
+
         <section class="section" data-scroll-spy id="section-9">
             <h1>09 Sección</h1>
             <h3>Filtro de búsqueda</h3>
@@ -236,12 +247,11 @@
             <h3>Slider</h3>
             <div class="slider-container">
                 <div class="items-slider-container">
-                    
-                    <div class="slider-item">
-                        <p><b>ITEM INICIAL</b></p>
-                    </div>
                     <div class="slider-item">
                         <img src="img/icon/item-1.jpg" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <p><b>ITEM INICIAL</b></p>
                     </div>
                     <div class="slider-item">
                         <img src="img/icon/item-2.jpg" alt="">
@@ -266,6 +276,40 @@
 
             </div>
             
+        </section>
+
+        <section class="section" data-scroll-spy id="section-12">
+            <h1>12 Sección</h1>
+            <h3>Slider</h3>
+            <br>
+            <video src="img/videos/rick_troleo.mp4" class="rick-video" controls muted="muted"></video>
+        </section>
+
+        <section class="section" data-scroll-spy id="section-13">
+            <h1>13 Sección</h1>
+            <h3>Form Validation HTML</h3>
+            <form id="contact-form">
+
+                <legend>Envía lo que piensas</legend>
+                <input type="username" name="username" id="username" placeholder="Username" pattern="[0-9a-zA-Z]{6,}" title = "Deben ser 6 caracteres mínimos; solo se aceptan numeros y letras" required>
+                
+                
+                <input type="email" name="email" id="email" placeholder="Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="No se ha ingresado un correo electrónico válido" required>
+
+                <input type="text" name="subject" id="subject" placeholder="subject" title="el asunto es requerido" required>
+
+                <textarea name="comments" rows="5" placeholder="Escribe un comentario" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required class="comments"></textarea>
+
+                <input type="submit" value="Enviar" class="submit-btn">
+
+                <div class="contact-form-loader">
+                    <img src="img/videos/dual.svg" alt="Cargando" class="contact-form-loader">
+                </div>
+                <div class="contact-form-response none">
+                    <p>Los datos han sido enviados</p>
+                </div>
+
+            </form>
         </section>
 
         <div class="notification" id="notification">

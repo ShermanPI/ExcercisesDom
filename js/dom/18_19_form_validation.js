@@ -42,6 +42,29 @@ export default function validateForm(){
         }
     })
 
+    document.addEventListener("submit", e=>{
+        //e.preventDefault()
+        
+        const $loader = document.querySelector(".contact-form-loader"),
+            $response = document.querySelector(".contact-form-response");
+        
+        if(e.target == $form){
+            console.log("HOLA HOLA HOLA")
+            $loader.classList.remove("none")   
+            
+            setTimeout(()=>{
+                $loader.classList.add("none")
+                $response.classList.remove("none")
+                $form.reset() //clean all the inputs in the form
+
+                setTimeout(()=>{
+                    $response.classList.add("none")
+                }, 3000)
+
+            },3000)
+        }
+    })
+
     
 }
 

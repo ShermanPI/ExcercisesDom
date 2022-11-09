@@ -15,7 +15,7 @@ import setSorteo from "./dom/14_sorteo.js";
 import setSlider from "./dom/15_slider.js";
 import intersectionMenu from "./dom/16_intersection_observer.js";
 import videoIntersection from "./dom/17_video_intersection.js";
-import validateForm from "./dom/18_form_validation.js";
+import validateForm from "./dom/18_19_form_validation.js";
 
 const d = document;
 
@@ -82,7 +82,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     //llamadas del ejercicio 17
     videoIntersection(".rick-video")
 
-    //llamadas del ejercicio 18
+    //llamadas del ejercicio 18 y 19
     validateForm()
 
 

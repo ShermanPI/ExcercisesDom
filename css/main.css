@@ -552,14 +552,17 @@ nav ul li a:hover{
     }
 }
 #contact-form input,
-.comments{
+.comments,
+.submit-btn{
     font-size: 1em;
     font-family: sans-serif;
     padding: 1em;
+    margin-top: 0.5em;
 }
 .comments{
     width: 100%;
     resize: none;
+    
 }
 
 .submit-btn{
@@ -575,20 +578,23 @@ nav ul li a:hover{
 }
 
 .contact-form-error{
-    margin-top: -0.5em;
+    text-align: left;
+    padding-left: 1em;
+    margin-top: -0.6em;
     font-size: 80%;
     background-color: var(--form-error-color);
     color: #fff;
     transition: all 800ms ease;
 }
 
-.contact-form-error.is-active{
-    display: block;
-    animation: show-message 1s normal 0s  ease-out both;
-}
 
 .none{
     display: none;
+}
+
+.is-active{
+    display: block;
+    animation: show-message 1s normal 0s  ease-out both;
 }
 
 @keyframes show-message {

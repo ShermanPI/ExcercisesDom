@@ -291,14 +291,13 @@
             <form id="contact-form">
 
                 <legend>Envía lo que piensas</legend>
-                <input type="username" name="username" id="username" placeholder="Username" pattern="[0-9a-zA-Z]{6,}" title = "Deben ser 6 caracteres mínimos; solo se aceptan numeros y letras" required>
+                <input type="username" name="username" placeholder="Username" pattern="[0-9a-zA-Z]{6,}" title = "Deben ser 6 caracteres mínimos; solo se aceptan numeros y letras" required>
                 
-                
-                <input type="email" name="email" id="email" placeholder="Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="No se ha ingresado un correo electrónico válido" required>
+                <input type="email" name="email" placeholder="Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="No se ha ingresado un correo electrónico válido" required>
 
-                <input type="text" name="subject" id="subject" placeholder="subject" title="el asunto es requerido" required>
+                <input type="text" name="subject" placeholder="subject" title="el asunto es requerido" required>
 
-                <textarea name="comments" rows="5" placeholder="Escribe un comentario" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required class="comments"></textarea>
+                <textarea name="comments" rows="5" placeholder="Escribe un comentario" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required class="comments"></textarea> <!--textarea doesnt have pattern-->
 
                 <input type="submit" value="Enviar" class="submit-btn">
 
@@ -306,7 +305,7 @@
                     <img src="img/videos/dual.svg" alt="Cargando" class="contact-form-loader">
                 </div>
                 <div class="contact-form-response none">
-                    <p>Los datos han sido enviados</p>
+                    <b><p>Los datos han sido enviados! XD</p></b>
                 </div>
 
             </form>

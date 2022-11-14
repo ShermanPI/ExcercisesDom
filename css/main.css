@@ -608,3 +608,8 @@ nav ul li a:hover{
         opacity: 1;
     }
 }
+
+.speech{
+    display: block;
+    margin-inline: auto;
+}
